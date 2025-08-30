@@ -1,0 +1,273 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+header {
+    background-color:black; /* Keep header black */
+    padding: 10px 0;
+    width: 100vw;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* Navigation container within the header */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1250px; /* Limit width for centering */
+    margin: 0 auto; /* Center the navigation */
+}
+
+.logo {
+    font-size: 28px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-btns {
+    margin-left: 20px;
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.navigation ul {
+    gap: 40px;
+    margin-right: 115px;
+}
+
+.nav-btns li {
+    margin-left: 10px;
+}
+
+.nav-btns a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-btns a:hover {
+    color: orange;
+}
+
+.get-in-touch-btn {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-left: 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.get-in-touch-btn:hover {
+    background-color: white;
+    color: orange;
+}
+
+body {
+    background-color: #000; /* Set the entire page's background color to black */
+    color: #fff; /* Set text color to white */
+}
+
+.campaign-creators-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #fff; /* Ensure section text is white */
+}
+
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.text-content {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.text-content h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.get-in-touch-button {
+    background-color: transparent;
+    border: 2px solid #ff5a00;
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.get-in-touch-button:hover {
+    background-color: #fff;
+    color: #ff5a00; /* Set text color to orange on hover */
+}
+
+.image-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-content img {
+    width: 100%;
+    max-width: 500px;
+    border: 5px solid black;
+}
+
+/*footer section starts*/
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 40px 20px;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #444;
+}
+
+.contact-us-btn{
+    margin-top: 20px;
+}
+
+.footer-brand,
+.footer-contact,
+.footer-links {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.footer-brand h3,
+.footer-contact h3,
+.footer-links h3 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer-contact p,
+.footer-links ul {
+    margin: 0;
+    line-height: 2.0;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.contact-us-btn {
+    background-color: transparent;
+    border: 1px solid orange;
+    color: orange;
+    padding: 10px 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.contact-us-btn:hover {
+    background-color: orange;
+    color: black;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 20px auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-bottom a {
+    color: orange;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+.get-in-touch-button {
+    background-color: transparent;
+    border: 1px solid orange;
+    color: orange;
+    padding: 10px 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.get-in-touch-button:hover {
+    background-color: orange;
+    color: black;
+}
+
+/*footer section ends*/

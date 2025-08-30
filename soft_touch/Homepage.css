@@ -1,0 +1,718 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+header {
+    background-color:black; /* Keep header black */
+    padding: 10px 0;
+    width: 100vw;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* Navigation container within the header */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Limit width for centering */
+    margin: 0 auto; /* Center the navigation */
+}
+
+.logo {
+    font-size: 28px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-btns {
+    margin-left: 20px;
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.navigation ul {
+    gap: 40px;
+    margin-right: 115px;
+}
+
+.nav-btns li {
+    margin-left: 10px;
+}
+
+.nav-btns a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-btns a:hover {
+    color: orange;
+}
+
+.get-in-touch-btn {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-left: 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.get-in-touch-btn:hover {
+    background-color: white;
+    color: orange;
+}
+
+/* Main Content Styles */
+main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 1528px;
+    height: 70vh;
+    padding: 40px 265px;/* Reduced padding to make it more responsive */
+    background-color: #000;
+    align-content: center;
+}
+
+.greeting {
+    max-width: 500px;
+    text-align: left;
+    margin-right: 10px;
+}
+
+.greeting h1 {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: white;
+}
+
+.greeting p {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.connect-btn {
+    background-color: black;      /* Black background */
+    color: white;                 /* White text */
+    border: 2px solid orange;     /* Orange border */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.connect-btn:hover {
+    background-color: white;      /* White background on hover */
+    color: orange;                /* Orange text on hover */
+    border: 2px solid orange;     /* Keeps orange border */
+}
+
+
+.image-container {
+    max-width: 400px;
+    margin-left: 0;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Moving Brand Logos Section */
+.logo-carousel-container {
+    max-width: 100vw;
+    overflow: hidden;
+    margin: 0 auto;
+    background-color:transparent;
+    padding: 10px 0;
+
+}
+
+.logo-carousel {
+    display: flex;
+    animation: scroll 30s linear infinite; /* Increased duration for smoother scrolling */
+    gap: 30px; /* Adjusted gap for more visibility */
+    width: calc(150px * 18 + 17 * 30px); /* Adjusted to accommodate the total number of logos and gaps */
+}
+
+.logo-carousel img {
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); /* Adjusted for smoother effect */
+    }
+}
+
+/* Duplicated logos for seamless scrolling */
+.logo-carousel::after {
+    content: '';
+    width: 100vw;
+    flex: none;
+}
+
+/* Our Feed Section */
+.our-feed {
+    max-width: 1000px; /* Limit the width of the entire feed section */
+    margin: 50px auto; /* Center align the section and add space */
+    text-align: left; /* Align heading to the left */
+    padding: 0 20px;
+}
+
+.our-feed h2 {
+    font-size: 36px;
+    color: black;
+    margin-bottom: 10px;
+    padding-left: 5px; /* Slight padding for neat left alignment */
+}
+
+/* Slider Container Styles */
+.slider-container {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1000px;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    height: 600px; /* Increased height of the slider */
+}
+
+.slider-text h1{
+    margin-top: 30px;
+    font-size: 50px;
+}
+
+.slider-text p{
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.slider-text {
+    flex: 1;
+    padding: 40px;
+    background-color: orange; 
+    text-align: right;
+    color:black;
+}
+
+.slider-images {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-images img {
+    opacity: 0;
+    position: absolute;
+    transition: opacity 1s ease-in-out;
+    height: 100%; /* Ensure images cover the full height of the slider */
+    width: 100%; /* Ensure images cover the full width of the slider */
+}
+
+.slider-images img.active {
+    opacity: 1;
+}
+
+.slider-buttons .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: transparent;
+    border: 2px solid black;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 50px;
+}
+
+.slider-buttons .learn-more-btn {
+    background-color: black;
+    color: white;
+}
+
+.slider-buttons .learn-more-btn a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.slider-buttons .learn-more-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.slider-buttons .learn-more-btn a:hover{
+    color: black;
+}
+
+.slider-navigation {
+    position: absolute;
+    top: 50%; /* Center the arrows vertically */
+    left: 0; /* Position the left arrow to the left */
+    right: 0; /* Position the right arrow to the right */
+    display: flex;
+    justify-content: space-between; /* Space between left and right arrows */
+    transform: translateY(-50%); /* Vertically center the arrows */
+    padding: 0 20px;
+}
+
+.slider-navigation button {
+    border: none;
+    background-color: transparent;
+    font-size: 32px; /* Increased font size */
+    cursor: pointer;
+    color: black; /* Adjust arrow color as needed */
+    padding: 15px; /* Increased padding for a larger clickable area */
+    line-height: 1;
+    transition: color 0.3s; 
+}
+
+.slider-navigation button:hover {
+    color: orange; /* Change color on hover */
+}
+/* Passion Section Styles */
+.passion-section {
+     /* Black background */
+    color: white;            /* White text */
+    padding: 40px 20px;     /* Padding for spacing */
+    max-width: 1000px;      /* Limit the width */
+    margin: 50px auto;      /* Center align the section */
+    border-radius: 8px;     /* Optional: Rounded corners */
+    background-size: cover; /* Adjust background image size */
+    background-repeat: no-repeat; /* Prevent repeating */
+    position: relative; /* Ensure positioning for overlay */
+    background-image: url('images/pattern01.jpg');
+}
+
+/* Heading Styles */
+.passion-section h2 {
+    font-size: 32px; /* Increased font size for heading */
+    margin-bottom: 20px; /* Space below heading */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Add text shadow */
+    font-weight: bold; /* Make heading bold */
+}
+
+/* Paragraph Styles */
+.passion-section p {
+    font-size: 20px; /* Increased font size for paragraph */
+    line-height: 1.8; /* Increased line height for readability */
+    margin: 0; /* Reset margin for p elements */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Add text shadow */
+}
+
+/* Adding a semi-transparent overlay */
+.passion-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Black overlay with transparency */
+    z-index: 1; /* Send it behind the text */
+}
+
+/* Ensuring text is above the overlay */
+.passion-section h2, .passion-section p {
+    position: relative; /* Position relative to ensure stacking context */
+    z-index: 2; /* Bring text above the overlay */
+}
+
+/* Services Section */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Services Section Styles */
+.services-section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: orange; 
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Services Grid Styles */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.service-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+.service-card:hover img {
+    transform: scale(1.1);
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.service-card:hover .card-overlay {
+    opacity: 1;
+}
+
+.card-overlay h3 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+/* Arrow Styles */
+.arrow {
+    font-size: 2rem; /* Bold size for the arrow */
+    color: white; /* Arrow color */
+    text-decoration: none; /* Remove underline */
+    opacity: 0; /* Start invisible */
+    transition: opacity 0.3s ease-in-out;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.service-card:hover .arrow {
+    opacity: 1; /* Show arrow on hover */
+}
+/*One stop context*/
+.content-section {
+    background-color: rgb(255,165,0); /* Brighter orange background */
+    color: white;
+    display: flex; /* Use flexbox to center content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 300px; /* Set a smaller height for the section */
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding doesn’t cause overflow */
+    width: calc(100% + 40px); /* Expand width beyond the viewport */
+    max-width: 100vw; /* Ensure it takes the full width of the viewport */
+    margin-left: -20px; /* Adjust to negative half of the padding */
+    margin-right: -20px; /* Adjust to negative half of the padding */
+}
+
+.container {
+    max-width: 900px;
+    padding: 0 20px; /* Add padding for mobile responsiveness */
+}
+
+h1 {
+    font-size: 28px; /* Adjust font size as needed */
+    font-weight: bold;
+    margin-bottom: 10px; /* Adjust margin */
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: white;
+}
+
+/*footer{
+    background-color: #000;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-top div {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+footer h1 {
+    font-size: 24px; /* Size for the Almira Inc. text 
+    margin-bottom: 20px;
+}
+
+footer h1 a {
+    color: white; /* Color for the Almira Inc. text 
+    text-decoration: none; /* Remove underline 
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a img {
+    width: 24px;
+}
+
+.contact-button, .get-in-touch-button {
+    margin-top: 20px;
+    border: 2px solid orange;
+    background: transparent;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+}
+
+.contact-button:hover, .get-in-touch-button:hover {
+    background: white;
+    color: orange;
+}
+
+footer h3 {
+    margin-bottom: 15px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-bottom a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+.get-in-touch-button-wrapper {
+    text-align: center;
+    margin-top: 20px;
+}*/
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 40px 20px;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #444;
+}
+
+.footer-brand,
+.footer-contact,
+.footer-links {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-brand h3,
+.footer-contact h3,
+.footer-links h3 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer-contact p,
+.footer-links ul {
+    margin: 0;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.contact-us-btn {
+    background-color: transparent;
+    border: 1px solid orange;
+    color: orange;
+    padding: 10px 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.contact-us-btn:hover {
+    background-color: orange;
+    color: black;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 20px auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-bottom a {
+    color: orange;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+.get-in-touch-button {
+    background-color: transparent;
+    border: 1px solid orange;
+    color: orange;
+    padding: 10px 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.get-in-touch-button:hover {
+    background-color: orange;
+    color: black;
+}
+
+
+/* Ensure body and html take full height */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Set the footer to expand fully */
+.site-footer {
+    width: 100%;
+    background-color: #000; /* Adjust the color as needed */
+    color: #fff; /* Footer text color */
+    padding: 20px 0;
+    position: relative; /* or position: fixed; if you want it always visible at the bottom */
+    left: 0;
+    bottom: 0;
+}
+
+.footer-content {
+    max-width: 1200px; /* Adjust the width according to your content */
+    margin: 0 auto; /* Center the footer content */
+    padding: 0 20px;
+}

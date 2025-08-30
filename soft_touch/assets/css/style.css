@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+li,
+a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+}
+
+.nav-img {
+  width: 150px;
+  height: 100px;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links li a :hover {
+  color: aqua;
+}
+
+#user {
+  font-size: 25px;
+}
+
+.search-container {
+  float: right;
+  padding-right: 115px;
+  margin-top: -50px;
+}
+
+input[type="text"] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  background-color: #e5e5e5;
+}
+
+.search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #c4c4c4;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background: #ccc;
+}
+
+.footer-sec {
+  border-top: 3px solid #f2f2f2;
+}
+
+.footer-sec footer {
+  text-align: center;
+}
+
+footer {
+  padding: 30px 10%;
+}
+
+footer .container {
+  text-align: center;
+}
+
+.raw {
+  display: flex;
+  justify-content: space-between;
+  pad: 40px 100px;
+}
+
+.footer-col h1 {
+  font-size: 40px;
+}
+
+.footer-col h1 span {
+  color: rgb(0, 255, 170);
+}
+
+.footer-col ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+.footer-col form {
+  text-align: center;
+}
+
+.footer-col h4 {
+  color: #000;
+  margin-bottom: 25px;
+  font-size: 18px;
+  position: relative;
+  font-weight: 500;
+  text-align: center;
+}
+
+.footer-col ul li {
+  padding: 5px 0;
+  margin: 10px 0;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  color: #000;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.footer-col input {
+  border: none;
+  width: 250px;
+  height: 45px;
+  display: block;
+  padding-left: 20px;
+  margin: 14px 0;
+}
+
+.footer-col .inputSubmit {
+  padding: 0 20px;
+  background-color: rgb(0, 255, 170);
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+}
+
+.mySlides {
+  display: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.slideshow-container {
+
+  position: relative;
+  margin: auto;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #717171;
+}
+
+.slideshow-container {
+
+  position: relative;
+  margin: auto;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.register-wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image:url("../pic/min2.jpg");
+}
+.form {
+  min-width: 60%;
+  max-width: 700px;
+  /* border: 1px solid #000; */
+  box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  background-color:rgb(95, 159, 180);
+}
+
+.form-group {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  /* border: 1px solid #ccc; */
+  /* border-radius: 4px; */
+  box-sizing: border-box;
+  width: 49%;
+}
+
+.form-element {
+  /* padding: 12px 20px; */
+  /* margin: 8px 0; */
+  display: block;
+  /* border: 1px solid #ccc; */
+  /* border-radius: 4px; */
+  box-sizing: border-box;
+  width: 100%;
+  accent-color: off;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.p-1 {
+  padding: 10px;
+}
+input.submit_btn {
+
+  background-color: darkblue;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+input.submit_btn:hover{
+  background-color:#f56c2d ;
+
+}
+
+.float-right {
+  float: right;
+}
+.alert {
+  max-width: 400px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 100;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 10px;
+  box-shadow: 0 0px 12px 10px rgb(0 0 0 / 20%);
+  overflow: hidden;
+  height: 60px;
+  transition: height ease-out 500ms;
+}
+
+.alert-success {
+  background-color: rgb(5, 171, 5);
+  color: #fff;
+}
+
+.alert-error {
+  background-color: rgb(171, 5, 16);
+  color: #fff;
+}

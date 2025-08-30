@@ -1,0 +1,345 @@
+/* General body styles with gradient background */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color:#E6E6FA;
+    background-image: url('images/callcenter.jpg'); /* Path to the image */
+    background-size: cover; /* Scale the image to cover the entire page */
+    background-position: center center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-attachment: fixed; /* Makes the background stay in place when scrolling */
+ /* Text color for readability */
+    /*background: linear-gradient(135deg, #f8f9fa 0%, #d9e2f1 100%);*/
+}
+
+/* Flexbox layout for logo section */
+.logo1 {
+    display: flex;
+    margin: 20px auto;
+    width: 80%;
+    align-items: center;
+    gap: 150px;
+}
+
+.logo1 img {
+    width: 500px;
+    height: 190px;
+    border-radius: 10px;
+}
+
+.Cname1 {
+    margin-left: 20px;
+    color: #766767;
+    font-weight: 200;
+}
+
+.Cname1 h1 {
+    font-size: 2.5rem;
+    
+    /*color: #333;*/
+}
+
+.Cname1 h2 {
+    font-size: 1.5rem;
+    
+    /*color: #666;*/
+}
+
+
+/* Style for company name section */
+.Cname2 {
+    border: 5px solid #333;
+    border-radius: 50px;
+    padding: 0px;
+    text-align: center;
+    width: 1500px;
+    margin: 10px auto;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Cname2 h3 {
+    color: #ff5733;
+    font-size: 1.5rem;
+}
+
+/* Container for the contact section */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 85%;
+    background-color: #e9e9e9;
+    /*background-color: #f5f5f5;*/
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+/*
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1300px;
+}*/
+
+/* Left side contact details */
+.left-contact-details {
+    width: 40%;
+}
+
+.phoneIcon i {
+    margin-left: 250px;
+    font-size: 22px;
+    color: rgb(155, 60, 60);
+}
+
+.contact-box i.fa-envelope {
+    margin-left: 180px;
+    font-size: 22px;
+    color: darkviolet;
+}
+
+.contact-box i.fa-fax {
+    margin-left: 250px;
+    font-size: 22px;
+    color: rgb(36, 36, 231);
+}
+
+.HQicon {
+    display: flex;
+
+}
+
+.HQicon i{
+
+    margin-left: 150px;
+    margin-top: 50px;
+    font-size: 25px;
+    color: rgb(59, 210, 59);
+}
+
+.contact-box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-box h4 {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+/* Vertical line to separate sections */
+.vertical-line {
+    width: 2px;
+    background-color: #666;
+    margin: 0 20px;
+}
+
+/* Right side form */
+form {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Form fields container */
+form .customer-details {
+    margin: 20px 0;
+    padding: 10px;
+}
+
+/* Add margin between the rows */
+form .input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    column-gap: 50px;
+}
+
+/* Input boxes styling */
+form .input-box {
+    width: 70%;
+    margin-bottom: 20px;
+    
+}
+
+/*
+form .input-box #contactnumber{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    
+}*/
+
+form .input-box input,
+form .input-box textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    transition: 0.3s ease;
+}
+
+form .input-box input:focus,
+form .input-box textarea:focus {
+    outline: none;
+    border-color: #ff5733;
+    box-shadow: 0 0 8px rgba(255, 87, 51, 0.5);
+}
+
+/* Message box */
+form .contactAndMessage #Messagebox {
+    margin-top: 0;
+    height: 150px;
+}
+
+form #contactnumber{
+    width: 100%; /* Increase the width of Contact Number input to align with Email */
+}
+
+/* Button styles */
+form .button {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+form .button .submit-btn,
+form .button .clear-btn {
+    padding: 12px 30px;
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+form .button .submit-btn:hover,
+form .button .clear-btn:hover {
+    background-color: #e04c1a;
+}
+
+form .button .clear-btn {
+    margin-left: 20px;
+}
+
+form .button .submit-btn[disabled] {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .logo1 img {
+        width: 150px;
+    }
+
+    .Cname2 {
+        width: 90%;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .left-contact-details,
+    form {
+        width: 100%;
+    }
+
+    form .input-box {
+        width: 100%;
+    }
+
+    .vertical-line {
+        display: none;
+    }
+}
+
+.section2 {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    max-width: 85%;
+    background-color: #e9e9e9;
+    /*background-color: #f5f5f5;*/
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px auto; /* Add space between buttons and the section2 form */
+
+}
+
+.search-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-password {
+    width: 50%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+}
+
+.section2 h3 {
+    color: #ff5733;
+    font-weight: bolder;
+    font-size: 25px;
+    padding-top: 35px;
+    padding-left: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.section2 .PasswordNIC{
+
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.section2 .search-box{
+
+    display: flex;
+    flex-direction: column;
+}
+
+.section2 .submit-btn {
+    margin-top: 20px;
+    width: 100px; /* Adjust the width as per your needs */
+    padding: 10px;
+    background-color: #4e33ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.section2 .submit-btn:hover {
+    background-color: #e04c1a; /* Add hover effect if needed */
+}
+
+form .search-box input:focus {
+    outline: none;
+    border-color: #ff5733;
+    box-shadow: 0 0 8px rgba(255, 87, 51, 0.5);
+}
+
+
+
+

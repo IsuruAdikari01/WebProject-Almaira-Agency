@@ -1,0 +1,276 @@
+body{
+    margin:10px;
+    background-image: url(bg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    
+}
+.what{
+    display: flex;
+    flex-direction: column;
+    
+}
+.wd1,.hd1,.ad1{
+    font-size: 25px;
+    text-align: center;
+    color:rgba(7, 21, 67, 0.989);
+}
+
+.slide{
+    /*border: 1px solid black;*/
+    margin: auto;
+    text-align: center;
+    
+
+}
+.slide img{
+    width: 1100px;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+}
+.wd3{
+    
+    background-color: rgba(98, 255, 0, 0.059);
+    width:90%;
+    margin: 30px auto;
+    padding-top:10px;
+    font-size: 16px;
+    border-radius:20px;
+    
+   
+   
+}
+.wd3 p{
+    background: transparent;
+    backdrop-filter: blur(30px);
+    
+
+}
+
+.howwork{
+    display: flex;
+    flex-direction: column;
+    
+}
+.hd1{
+    text-align: center;
+}
+.slider{
+	margin:auto;
+	width:40%;
+    text-align: center;
+}
+ 
+.img-box img{
+	width:500px;
+    height:350px;
+}
+
+.btni button{
+	border:none;
+	outline:none;
+	background:#888;
+	padding:10px 30px;
+	font-size: 20px;
+	color:#ddd;
+	cursor: pointer;
+	margin:10px auto;			 
+}
+.advan{
+    display: flex;
+    flex-direction: column;
+   
+}
+.ad1{
+    text-align: center;
+
+}
+.ad2{
+    width:90%;
+    text-align: center;
+    padding:20px;
+    margin:30px ;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    
+    
+
+}
+.ad21{
+    width:300px;
+    margin:0 10px;
+    box-shadow:0 0 20px 2px rgba(0,0,0,.1);
+    transition:1s;
+    text-align: left;
+    
+
+}
+.ad2 img{
+    display: block;
+    width:100%;
+    border-radius:10px;
+
+
+}
+.ad21:hover{
+    transform: scale(1.3);
+    z-index: 2;
+}
+
+.bar{
+    width:80%;
+    height:100px;
+    margin:100px auto;
+    background-image:url(banner.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding:10px 0 ;
+
+}
+.bar button{
+    color:rgb(10, 11, 10);
+}
+.bar button:hover{
+    color:aqua
+
+}
+
+.box{
+    width: 80%;
+    height: 600px;
+    margin: auto;
+   background-image: url(form.jfif);
+    background-size:auto;
+     background-position: left;
+    box-shadow: 0 15px 40px rgba(0,0,0,.5);
+    border-radius: 30px;
+
+
+
+}
+.left{
+    float:left;
+    width:60%;
+    height: 600px;
+ 
+    border-radius: 20px;
+    background-image: url(form.jfif);
+    background-size: cover;
+    box-sizing: border-box;
+    background-position: center;
+
+
+    
+}
+.right{
+    float:right;
+    width:40%;
+    height: 600px;
+    box-sizing: border-box;
+    
+
+}
+.formbox{
+    width:88%;
+    height: 475px;
+    margin: auto;
+    background: transparent;
+    border: 3px solid rgb(213, 233, 140);
+    backdrop-filter: blur(30px);
+    color: #fff;
+    border-radius: 30px;
+    padding: 60px 15px; 
+    
+    
+
+}
+.formbox form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+
+.formbox input {
+        width: 80%;
+        background-color: rgb(230, 235, 222);
+        border: none;
+        outline: none;
+        border: 2px solid rgba(255, 255, 255, .2);
+        border-radius: 40px;
+        padding: 10px;
+        margin: auto;
+        text-align: center;
+        margin-bottom:10px;
+}
+
+.btn{
+    padding-top: 20px;
+}
+.success{
+    border-radius: 10px;
+      width: 40%;
+      height: 100%;
+      background-color: green;
+      border: none;
+      outline: none;
+      border: 2px solid rgba(255, 255, 255, .2);
+      border-radius: 40px;
+      font-size: 16px;
+      color: #fff;
+      padding: 10px ;
+      cursor:pointer;
+      margin: auto;
+}
+.cancel {
+      border-radius: 10px;
+      width: 40%;
+      height: 100%;
+      background-color: rgb(206, 31, 48);
+      border: none;
+      outline: none;
+      border: 2px solid rgba(255, 255, 255, .2);
+      border-radius: 40px;
+      font-size: 16px;
+      color: #fff;
+      padding: 10px ;
+      cursor:pointer;
+      margin: auto;
+      
+}
+.af{
+    text-decoration: none;
+    color: #fff;
+}
+button:hover {
+    background-color: #171718;
+    
+}
+.hello{
+
+    font-size: 25px;
+    text-align: center;
+}
+.eh1{
+    font-size: 40px;
+    text-align: center;
+}
+.msgh{
+   font-size:20px ;
+    padding-bottom:10px;
+    position: relative;
+    left:150px;
+    
+}
+
+
+
+

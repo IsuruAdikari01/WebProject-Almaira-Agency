@@ -1,0 +1,165 @@
+body{
+
+    background-image: url(bg.jpg ) ;
+    background-repeat: no-repeat;
+    background-color:white;
+    background-size:cover;
+    background-position: center;
+    
+
+   
+    
+}
+.imgs{
+    display: flex;
+    justify-content: center;
+}
+
+.imgs img{
+    width:150px ;
+    height:150px;
+    margin-bottom:10px;
+    
+}
+
+.path{
+    color: #fff;
+}
+
+.path a{
+color: #fff;
+text-decoration: none;
+
+}
+
+.loginbox{
+margin: auto;
+width: 30%;
+background: transparent;
+border: 3px solid rgb(169, 183, 191);
+backdrop-filter: blur(15px);
+color: #fff;
+border-radius: 30px;
+padding: 60px 15px;   }
+
+.loginbox h1{
+    text-align: center;
+    margin: auto;
+
+}
+
+
+.loginbox h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top:1px;
+    text-align: center;
+    }
+    
+.loginbox form {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+        
+    }
+    
+.loginbox label {
+
+     margin-bottom: 10px;
+     
+          
+    }
+    
+.loginbox input[type="text"],.loginbox input[type="password"] {
+        width: 80%;
+        background-color: rgb(230, 235, 222);
+        border: none;
+        outline: none;
+        border: 2px solid rgba(255, 255, 255, .2);
+        border-radius: 40px;
+        padding: 10px;
+        margin: auto;
+        text-align: center;
+        margin-bottom:10px;
+    }
+    
+    .remember-me {
+        display: flex;
+        align-items:center;
+        margin-top:10px;
+        margin-bottom:10px;
+        justify-content: left;
+        margin-right:35px;
+        position: relative;
+        left: 30px;
+        
+    }
+    
+    .remember-me input {
+        margin-right: 10px;
+        position: relative;
+        bottom:5px;
+    }
+    
+    button {
+    
+      width: 40%;
+      height: 100%;
+      background: transparent;
+      border: none;
+      outline: none;
+      border: 2px solid rgba(255, 255, 255, .2);
+      border-radius: 40px;
+      font-size: 16px;
+      color: #fff;
+      padding: 10px ;
+      cursor:pointer;
+      margin: auto;
+       
+    }
+    
+    
+    button:hover {
+        background-color: #b0bda3;
+    }
+    
+   
+    .forgot-signup {
+        margin-top: 10px;
+        text-align: center;
+        
+
+    }
+    .forgot-signup a{
+        text-decoration: none;
+        color: #0b2149a0;
+    }
+
+    .terms {
+        display: flex;
+        justify-content: space-between; /* Adjusts space between the items */
+        padding: 10px;
+        margin-top:60px;
+         /* Optional padding */
+        /*background-color:#4975da8c; Optional background color */
+    }
+    
+    .link-item {
+        flex: 1; /* Each item takes up equal space */
+        text-align: center; /* Center the text */
+    }
+    
+    .link-item a {
+        text-decoration: none; /* Remove underline */
+        color: #b8bbc3a0; /* Link color */
+        /*backdrop-filter: blur(100px);*/
+       /* background-color: #f0f0c7;*/
+        /*border: 3px solid rgb(160, 162, 146);*/
+        border-radius: 5px;
+      
+    }
+    
+    .link-item a:hover {
+        text-decoration: underline; /* Underline on hover */
+    }
